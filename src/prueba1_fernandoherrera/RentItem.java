@@ -9,13 +9,10 @@ package prueba1_fernandoherrera;
  * @author herre
  */
 public class RentItem {
-    private int codigo;
-    private String nombre;
-    private int precio_renta;
+    int codigo;
+    String nombre;
+    int precio_renta;
     int copias;
-
-    public RentItem() {
-    }
 
     public RentItem(int codigo, String nombre, int precio_renta) {
         this.codigo = codigo;
@@ -60,7 +57,7 @@ public class RentItem {
     //Ejecutar
     public void ejecutarOpcion (int opcion){
         if (opcion == 1){
-            System.out.println();
+            System.out.println(this.toString());
         }
         else {
             System.out.println("Opcion no Valida");
